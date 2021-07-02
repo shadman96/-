@@ -201,6 +201,20 @@ footer{
   display: none;
 }
 }
+@media only screen and (min-width : 768px){
+  main{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+  section{
+    min-height: 100%;
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
+}
 .section1{
   height: 100vh;
   position: relative;
@@ -306,11 +320,10 @@ footer{
 .short-info{
   padding: 15px;
   color: #31F2E6;
-  z-index: 100;
 }
 .short-info p{
   margin: 0;
-  font-size: 42px;
+  font-size: 40px;
   text-shadow:  5px 0px 15px rgb(27, 255, 217),
   -5px 0px 25px rgb(0, 204, 255), 0px 0px 15px rgb(0, 255, 213);
   margin-left: 15px;
@@ -348,6 +361,12 @@ footer{
   }
   .social-medias ul li a{
     font-size: large;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .short-info p{
+    margin: 0;
+    font-size: 27px;
   }
 }
 .section2{
