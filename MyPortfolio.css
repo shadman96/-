@@ -32,7 +32,7 @@ body{
   user-select: none;
   pointer-events: none;
   transform: scale(0.8);
-  z-index: 1000000;
+  z-index: 10000000;
 }
 .cursor::before {
   content: "";
@@ -190,6 +190,17 @@ footer{
   margin-bottom: 4px;
   background: transparent;
 }
+@media only screen and (max-width:768px){
+  .navbar .container-fluid{
+    padding: 0 5px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.cursor , .cursor-follower{
+  display: none;
+}
+}
 .section1{
   height: 100vh;
   position: relative;
@@ -322,17 +333,35 @@ footer{
   text-transform: uppercase;
   font-family: 'Syncopate', sans-serif;
 }
+@media only screen and (max-width:768px){
+  .my-img img{
+    height: 450px;
+    width: 700px;
+  }
+  .short-info p{
+    margin: 0;
+    font-size: 34px;
+  }
+  .social-medias li{
+    margin: 125px 0;
+  }
+  .social-medias ul li a{
+    font-size: large;
+  }
+}
 .section2{
   background-color: #f7f9fb;
   overflow: hidden;
 }
+.section2 .bio{
+  min-width: 100%;
+}
 .section2 p{
   position: relative;
   color: #141414;
-  margin: 40px;
-  min-width: 800px;
+  width: 100%;
   user-select: none;
-  font-size: 60px;
+  font-size: 40px;
 }
 .section2 p span{
   position: relative;
@@ -353,6 +382,8 @@ footer{
   100%{
     transform: scale(1.4) rotateX(-10deg) skew(-10deg);
   }
+}
+@media only screen and (max-width:768px){
 }
 /*Section 3*/
 .section3{
