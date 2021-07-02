@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="C:\Users\SarchnaR\Desktop\bootstrap-5.0.1-dist\css\bootstrap.min.css">
+    <script src="C:\Users\SarchnaR\Desktop\bootstrap-5.0.1-dist\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="C:\Users\SarchnaR\Desktop\icons-1.5.0\.fantasticonrc.js"></script>
+  <!--End Bootstrap-->
+
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!--End Swiper-->
+
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!--jQuery End-->
+
+<!--Scroll Reval-->
+<script src="Js/scrollreveal.js"></script>
+<!--End Scroll RevaL-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="MyPortfolio.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <!--Cursor-->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  <!--End Cursor-->
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark m-0 p-0">
+    <div class="container-fluid">
+      <button class="btn offcanvas-open-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="bi bi-star"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">XalaShada</h5>
+          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex justify-content-center align-items-center">
+          <ul class="list-unstyled text-center">
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+      
+
+        <a class="navbar-brand mx-auto" href="#">XalaShada</a>
+
+        <ul class="navbar-nav flex-row flex-wrap">
+          <li class="nav-item col">
+            <a class="nav-link px-2" rel="noopener" data-bs-toggle="collapse" href="#collapseExample" aria-controls="collapseExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item dropdown col dropstart">
+            <a class="nav-link px-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+              </svg>
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another</a></li>
+              <li><a class="dropdown-item" href="#">Something</a></li>
+            </ul>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link px-2" href="https://bootstrap-slack.herokuapp.com/" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+  <!--End Navbar-->
+
+  <!--Search-form-->
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body bg-dark rounded-0">
+      <form action="" class="search-form">
+        <input class="search-input" type="text" placeholder="Search...">
+        <button class="btn btn-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+      </button>
+      </form>
+    </div>
+  </div>
+  <!--End Search-form-->
+
+
+  <main>
+    <section class="section1 d-flex">
+      <div class="my-img">
+        <img src="My-Portfolio-vids-imgs/pexels-monstera4-6311332.png">
+      </div>
+      <div class="shapes">
+        <i data-speed="-5" class="bi bi-lightning layer"></i>
+        <i data-speed="2" class="bi bi-circle layer"></i>
+        <i data-speed="6" class="bi bi-diamond layer"></i>
+        <i data-speed="-2" class="bi bi-gem layer"></i>
+        <i data-speed="-3" class="bi bi-heart layer"></i>
+        <i data-speed="-9" class="bi bi-hexagon layer"></i>
+        <i data-speed="6" class="bi bi-triangle layer"></i>
+        <i data-speed="4" class="bi bi-star layer"></i>
+        <i data-speed="5" class="bi bi-x-lg layer"></i>
+      </div>
+      <div class="part-1 d-flex justify-content-start align-items-start">
+        <div class="short-info">
+          <p>Hello World</p>
+          <p>My Name Is Shadman</p>
+          <p>I'm a Front End</p>
+          <p>Developer</p>
+        </div>
+      </div>
+      <div class="part-2 d-flex justify-content-end align-items-center">
+        <div class="social-medias">
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/Shadman.2211/" target="_blank">facebook</a></li>
+            <li><a href="https://www.instagram.com/shadman_sirwan_/" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/ShadmanSirwan" target="_blank">twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section2">
+      <div class="bio">
+        <p>Hello everyone my name's Shadman Sirwan, I'm 17 years old and born in sulaymaniyah iraq, I'm a student at koshin heigh school and web developer, and my big dream is pass the 12th grade with heigh scores to go to collage and be a profesional at <span>my dream job</span>.</p>
+      </div>
+  </section>
+
+
+  <section class="section3">
+    <div class="container p-3">
+      <h5 class="sect-3-header text-center py-2">My Services</h5>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="services-inner">
+            <i class="bi bi-clock-history"></i>
+            <h5>Slow Works</h5>
+            <p>sectetur adipisicing elit. Accusamus magni, cumque nihil incidunt voluptatum impedit tenetur enim illum cupiditate a dolor ea porro vel necessitatibus?</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-inner">
+            <i class="bi bi-shield-check"></i>
+            <h5>Safest</h5>
+            <p>adipisicing elit. Nostrum maiores atque fuga repudiandae quisquam? Amet fuga est temporibus sint, sunt ipsa? Ipsam accusantium necessitatibus non!</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-inner">
+            <i class="bi bi-cash-coin"></i>
+            <h5>Very Expencheap</h5>
+            <p>elit Ipsum quod, dicta mollitia laborum, dolores laboriosam, accusantium consequatur quae quas assumenda quidem voluptate! Ad, cum quidem.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-inner">
+            <i class="bi bi-gem"></i>
+            <h5>Creative Design</h5>
+            <p>adipisicing elit. Ipsum quod, dicta mollitia laborum, dolores laboriosam, accusantium consequatur quae quas assumenda quidem voluptate! Ad, cum quidem.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-inner">
+            <i class="bi bi-phone-landscape"></i>
+            <h5>Responsifo</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolores laboriosam, accusantium consequatur quae quas assumenda quidem voluptate! Ad, cum quidem.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="services-inner">
+            <i class="bi bi-code-square"></i>
+            <h5>Less Lines</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod, dicta consequatur quae quas assumenda quidem voluptate! Ad, cum quidem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section4" id="section4">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="sh-skills-inner">
+            <div class="sh-professional-skill">
+              <h3>Technical Skills</h3>
+              <div class="each-skill">
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Html</div>
+                      <div class="percentage-num">87%</div>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="percentagem" style="width: 87%;"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Css</div>
+                      <div class="percentage-num">75%</div>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="percentagem" style="width: 75%;"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Javascript</div>
+                      <div class="percentage-num">57%</div>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="percentagem" style="width: 57%;"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Python</div>
+                      <div class="percentage-num">26%</div>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="percentagem" style="width: 26%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6">
+          <div class="sh-professional-skills">
+            <h3>Professional Skills</h3>
+            <ul class="sh-professional-progress">
+              <li>
+                <div class="circle circle-1" data-thickness="4"></div>
+                <div class="pr-skill-name">Communication</div>
+              </li>
+
+              <li>
+                <div class="circle circle-2" data-thickness="4"></div>
+                <div class="pr-skill-name">Team Work</div>
+              </li>
+
+              <li>
+                <div class="circle circle-3" data-thickness="4"></div>
+                <div class="pr-skill-name">Project Management</div>
+              </li>
+
+              <li>
+                <div class="circle circle-4" data-thickness="4"></div>
+                <div class="pr-skill-name">Creativity</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section5">
+    <h5 class="sect-5-header py-2">Recent Projects</h5>
+    <div class="container-lg d-flex align-items-center py-2">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="col">
+            <div class="portfolio-item">
+                <div class="portfolio-thumb">
+                  <img src="My-Portfolio-vids-imgs/Projects/Screenshot 2021-06-18 192942.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="portfolio-item">
+                <div class="portfolio-thumb">
+                  <img src="My-Portfolio-vids-imgs/Projects/Screenshot 2021-06-18 192853.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="portfolio-item">
+                <div class="portfolio-thumb">
+                  <img src="My-Portfolio-vids-imgs/Projects/Screenshot 2021-05-20 143902.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="portfolio-item">
+                <div class="portfolio-thumb">
+                  <img src="My-Portfolio-vids-imgs/Projects/Screenshot 2021-05-20 143839.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="portfolio-item">
+                <div class="portfolio-thumb">
+                  <img src="My-Portfolio-vids-imgs/Projects/Screenshot 2021-05-20 143813.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="portfolio-item">
+                <div class="portfolio-thumb">
+                  <img src="My-Portfolio-vids-imgs/Projects/Screenshot 2021-05-20 143735.png" alt="" />
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section6">
+  <h5 class="sect-6-header py-4">Say Hola <br> Don't Be Shy!</h5>
+  <div class="container d-flex justify-content-center align-items-center">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col">
+          <div class="contact-form">
+            <div class="row">
+              <div class="col-md">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-0" id="floatingInput" placeholder="Full-Name">
+                  <label for="floatingInput">Full-Name</label>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating mb-3">
+                  <input type="Email" class="form-control rounded-0" id="floatingPassword" placeholder="ame@example.com">
+                  <label for="floatingPassword">Email address</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control rounded-0" id="floatingPassword" placeholder="Subject">
+              <label for="floatingPassword">Subject</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control rounded-0" placeholder="Leave a Message here" id="floatingTextarea2" style="height: 165px; resize: none;"></textarea>
+              <label for="floatingTextarea2">Message</label>
+            </div>
+            <button class="btn btn-info w-100 rounded-0">Submit</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="contact-way detail">
+            <h5 class="d-inline-block"><span class="header-txt">Contact Details</span>
+              <br>
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, voluptatum.</span>
+            </h5>
+          </div>
+          <div class="contact-way phone">
+            <i class="bi bi-phone"></i>
+            <h5 class="d-inline-block">
+              Phone:
+              <br>
+              <span>+964 772-154-8582</span>
+            </h5>
+          </div>
+          <div class="contact-way email">
+            <i class="bi bi-envelope"></i>
+            <h5 class="d-inline-block">
+              Email:
+              <br>
+              <span>shadman-sirwan@gmail.com</span>
+            </h5>
+          </div>
+          <div class="contact-way address">
+            <i class="bi bi-geo-alt"></i>
+            <h5 class="d-inline-block">
+              Address:
+              <br>
+              <span>Sulaymaniyah.  Iraq</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <footer class="footer d-flex align-items-center">
+    <div class="container mb-2">
+      <div class="row row-cols-1 row-cols-lg-2 text-center">
+        <div class="col">
+          <ul class="list-unstyled d-flex">
+            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+            <li><a href=""><i class="bi bi-twitter"></i></a></li>
+            <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href=""><i class="bi bi-google"></i></a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p>Rights Reserved By Creator Shadman</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+<script src="Js/MyPortfolio.js"></script>
+</body>
+</html>
