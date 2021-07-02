@@ -201,18 +201,20 @@ footer{
   display: none;
 }
 }
-@media only screen and (min-width : 768px){
+@media only screen and (max-width : 768px){
   main{
     height: 100vh;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y;
     overflow-y: scroll;
   }
   section{
     min-height: 100%;
     width: 100%;
+    scroll-snap-align: unset;
   }
   footer{
     width: 100%;
+    scroll-snap-align: unset;
   }
 }
 .section1{
